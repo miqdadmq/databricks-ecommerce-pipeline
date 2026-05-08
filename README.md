@@ -27,7 +27,6 @@
 ## Architecture
 
 ![Medallion Architecture](assets/medallion-architecture.png)
-```
 
 **Tech stack:** Databricks · PySpark · Delta Lake · Databricks SQL · Python 3.10+
 
