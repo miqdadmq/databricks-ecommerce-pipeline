@@ -26,7 +26,6 @@
 
 ## Architecture
 
-```
 ![Medallion Architecture](assets/medallion-architecture.png)
 ```
 
