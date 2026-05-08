@@ -27,25 +27,7 @@
 ## Architecture
 
 ```
-Raw Data (synthetic, 50k records)
-         │
-         ▼
-┌────────────────┐    ┌─────────────────┐    ┌────────────────┐    ┌──────────────┐
-│    Bronze      │───▶│     Silver      │───▶│     Gold       │───▶│  Dashboard   │
-│                │    │                 │    │                │    │              │
-│ Raw Delta table│    │ Typed, cleaned  │    │ Revenue trend  │    │ Databricks   │
-│ No transforms  │    │ Deduplicated    │    │ Top products   │    │ SQL + Viz    │
-│ Append-only    │    │ Partitioned     │    │ RFM segments   │    │ 9 widgets    │
-└────────────────┘    └─────────────────┘    └────────────────┘    └──────────────┘
-         │                    │                      │
-         │                    ▼                      │
-         │           ┌─────────────────┐             │
-         └──────────▶│  DQ Monitoring  │◀────────────┘
-                     │                 │
-                     │ Automated checks│
-                     │ Score tracking  │
-                     │ Failure alerts  │
-                     └─────────────────┘
+![Medallion Architecture](assets/Medallion Architecture Diagram.png)
 ```
 
 **Tech stack:** Databricks · PySpark · Delta Lake · Databricks SQL · Python 3.10+
