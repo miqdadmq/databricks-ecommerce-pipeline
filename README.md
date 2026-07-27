@@ -16,8 +16,6 @@
 ---
 
 ## Dashboard Preview
-
-<!-- Drag & drop screenshot kamu di sini via GitHub editor -->
 ![E-Commerce Sales Intelligence Dashboard](assets/dashboard-preview.png)
 
 *E-Commerce Sales Intelligence Dashboard — built on Databricks SQL*
